@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #ffecd2; */
+  color: #535050;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Tahoma;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(192, 108, 108);
+  font-size: 1.1rem;
+  border: 1px solid #ffecd2;
+  padding: 0.3em 0.6em;
+  background-color: #ffecd2;
+}
+
+a:hover {
+  cursor: pointer;
+  transition: 500ms;
+  border: 1px solid grey;
+  text-transform: capitalize;
+  color: grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.header h2 {
+  margin-bottom: 0.5em;
+}
+
+.hero-card {
+  padding: 1em 0;
+  gap: 1em;
+}
+
+.goal ul {
+  margin: 1em 0;
+}
+
+.goal-items {
+  font-size: 1.1rem;
+}
+
+.profile-anchor {
+  border: none;
+  background-color: inherit;
+}
+
+.chg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hng-profile {
+  padding: 1em 0;
+}
+
+.hng-profile h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.profile-detailes {
+  text-align: center;
+}
+
+.timestamp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  margin: 0.5em 0;
+}
+
+.timestamp span {
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hng-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hng-links h3 {
+  margin: 1em 0;
+}
+
+.hng-profile img {
+  margin: 1em 0;
+}
+
+footer {
+  background-color: #ffecd2;
+}
+
+.footer {
+  padding: 2em 0;
+}
+.footer h3 {
+  margin-bottom: 0.5em;
+}
+
+[data-testid="keywordLink"] {
+  margin: 1em 0;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-card {
+    flex-direction: row;
+  }
+
+  .mobile-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .goal ul {
+    margin: 3em 0;
+  }
+
+  .goal-items {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  .goal,
+  .profile-detailes {
+    width: 65%;
+  }
+
+  .profile-detailes {
+    text-align: left;
+    width: 40%;
+  }
+
+  .chg {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .timestamp {
+    margin: 2em 0;
+  }
+
+  .footer {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
